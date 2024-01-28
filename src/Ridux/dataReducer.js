@@ -9,8 +9,6 @@ switch (action.type) {
 ...state ,favData:[...state.favData,{items:action.items}]
        } 
      case "REMOVE_FROM_FAV":
-    
-     const newarr=state.cart
      return{
     
   ...state ,   favData:[...state.favData.filter(newarr=>newarr.items.id!== action.id)]

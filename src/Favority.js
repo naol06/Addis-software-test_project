@@ -9,40 +9,38 @@ function Favority() {
   const dispatch=useDispatch()
   return (
     <div>
-   {favdata.length>0 ? <Card style={{ width: '100%' }}>
-    {favdata.map((data, i)=>{
-      return  <div key={i} className='m-3'>
-      <Row>
-        <Col md={4}>
-          <Card.Img variant="top" src={data.items.image} />
-        </Col>
-        <Col md={8}>
-          <Card.Body>
-            <Card.Title>{data.items.song}</Card.Title>
-            <Card.Text>
-              {data.items.singer}
-            </Card.Text>
-            <Card.Text>
-            <div className='product_rating'>
-            {Array(data.items.rating).fill().map(()=>{
-             return <p className="bi painte painte bi-star-fill"></p>
-          })}
-            </div>
-             
-            </Card.Text>
-            <Button type='button' onClick={()=>dispatch(removeFromFav(data.items.id))}  variant="primary">Remove from Favorites</Button>
-          </Card.Body>
-        </Col>
-      </Row>
-      </div>
+    {favdata.length>0 ? <div className='d-flex row'>
+    { favdata.map((data, i)=>{
+      return   <div key={i} className='col-lg-4 col-md-6'>
+        <div className='product '>
+        <div className='d-flex justify-content-center '>
+        <p className='product_title'><strong>{data.items.singer} : </strong></p>
+        <div className='product_rating'>
+        {Array(data.items.rating).fill().map(()=>{
+         return <p className="bi painte painte bi-star-fill"></p>
+      })}
+        </div>
+        </div>
+      
+        <div className='product_info'>
+        <p ><strong>{data.items.song}</strong></p>
+       <p className='product_title'>{data.items.songDescription}</p>
+       <div className='d-flex justify-content-center'>
+       <Button type='button' onClick={()=>dispatch(removeFromFav(data.items.id))}  variant="primary">Remove from Favorites</Button>
+       </div>
+       </div>
+        </div>
+        </div>
+
     })}
-    </Card>
-   : <div className='d-flex justify-content-center'>
-    <h1>You have no Favority song</h1>
-    </div>}
     </div>
+    : <div className='d-flex justify-content-center'>
+     <h1>You have no Favority song</h1>
+     </div>}
+     </div>
+    
   );
-}
+  }
 
 export default Favority;
 
