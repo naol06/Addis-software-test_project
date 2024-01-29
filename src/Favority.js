@@ -16,7 +16,7 @@ function Favority() {
         <div className='d-flex justify-content-center '>
         <p className='product_title'><strong>{data.items.singer} : </strong></p>
         <div className='product_rating'>
-        {Array(data.items.rating).fill().map(()=>{
+        {Array(Number(data.items.rating)).fill().map(()=>{
          return <p className="bi painte painte bi-star-fill"></p>
       })}
         </div>

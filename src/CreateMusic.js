@@ -27,11 +27,11 @@ navigate('/')
     <div className='w-50 border p-5 bg-secondary rounded '>
     <div className='d-flex align-items-center justify-content-center v' ><h1>Create Song</h1></div>
     <form onSubmit={handlForm}>
+    <div className="form-group my-2">
+    <input type="text" className="form-control " onChange={e=>setdata({...data, singer:e.target.value})} placeholder="Enter Singer Name" required/>
+  </div>
     <div className="form-group">
       <input type="text" className="form-control" onChange={e=>setdata({...data, song:e.target.value})} placeholder="Enter Song Title" required/>
-    </div>
-    <div className="form-group my-2">
-      <input type="text" className="form-control " onChange={e=>setdata({...data, singer:e.target.value})} placeholder="Enter Singer Name" required/>
     </div>
     <div className="form-group">
     <input type="number" className="form-control" min="1" max="5" onChange={e=>setdata({...data, rating:e.target.value})} placeholder="Enter Song Rating" required/>
