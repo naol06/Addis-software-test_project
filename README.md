@@ -6,6 +6,9 @@
 
 ![Web capture_29-1-2024_214923_localhost](https://github.com/naol06/Addis-software-test_project/assets/118481867/6d64eba1-8d92-4899-b9ec-05d562d7ff59)
 
+Favority page
+
+
 ![Web capture_29-1-2024_21542_localhost](https://github.com/naol06/Addis-software-test_project/assets/118481867/082544ae-9c34-4dda-9054-64c2e3168ad2)
 ![Web capture_29-1-2024_215421_localhost](https://github.com/naol06/Addis-software-test_project/assets/118481867/8972a25c-5d7b-42ea-a44f-427875bf08bc)
 
