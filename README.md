@@ -1,3 +1,7 @@
+<h1>Firebase Deployed and link is:</h1>
+
+https://addis-project.web.app/
+
 ![Web capture_29-1-2024_214821_localhost](https://github.com/naol06/Addis-software-test_project/assets/118481867/f9ba9307-4590-4baa-89d2-243236490c85)
 
 ![Web capture_29-1-2024_214843_localhost](https://github.com/naol06/Addis-software-test_project/assets/118481867/1dd7e918-c367-4888-9561-4005490c99e3)
