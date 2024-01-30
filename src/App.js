@@ -8,6 +8,7 @@ import Favority from './Favority';
 import CreateMusic from './CreateMusic';
 import Update from './Update';
 import ReadSong from './ReadSong';
+import NotFoundPage from './NotFoundPage';
 function App() {
   return (
     
@@ -17,6 +18,7 @@ function App() {
     <Route path='/add'element={<div><Header pos fav/><CreateMusic/></div>}/>
     <Route path='/update/:id'element={<div><Header pos fav/><Update/></div>}/>
     <Route path='/view'element={<div><Header  fav/><ReadSong/></div>}/>
+    <Route path="*"  element={<NotFoundPage />} />
     </Routes>
  
   );

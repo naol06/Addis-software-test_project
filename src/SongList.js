@@ -20,19 +20,19 @@ window.location.reload()
     }
     return (
         <div className='col-lg-4  col-md-6'>
-        <div className='product '>
+        <div className='Song '>
         <div className='d-flex justify-content-center '>
-        <p className='product_title'><strong>{singer} : </strong></p>
-        <div className='product_rating'>
+        <p className='Song_title'><strong>{singer} : </strong></p>
+        <div className='Song_rating'>
         {Array(Number(rating)).fill().map(()=>{
          return <p className="bi painte painte bi-star-fill"></p>
       })}
         </div>
         </div>
       
-        <div className='product_info'>
+        <div className='Song_info'>
         <p ><strong>{song}</strong></p>
-       <p className='product_title'>{songDescription}</p>
+       <p className='Song_title'>{songDescription}</p>
         <p></p>
         </div>
        <div className='d-flex justify-content-center'>

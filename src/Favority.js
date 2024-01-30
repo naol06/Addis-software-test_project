@@ -12,19 +12,19 @@ function Favority() {
     {favdata.length>0 ? <div className='d-flex row'>
     { favdata.map((data, i)=>{
       return   <div key={i} className='col-lg-4 col-md-6'>
-        <div className='product '>
+        <div className='Song'>
         <div className='d-flex justify-content-center '>
-        <p className='product_title'><strong>{data.items.singer} : </strong></p>
-        <div className='product_rating'>
+        <p className='Song_title'><strong>{data.items.singer} : </strong></p>
+        <div className='Song_rating'>
         {Array(Number(data.items.rating)).fill().map(()=>{
          return <p className="bi painte painte bi-star-fill"></p>
       })}
         </div>
         </div>
       
-        <div className='product_info'>
+        <div className='Song_info'>
         <p ><strong>{data.items.song}</strong></p>
-       <p className='product_title'>{data.items.songDescription}</p>
+       <p className='Song_title'>{data.items.songDescription}</p>
        <div className='d-flex justify-content-center'>
        <Button type='button' onClick={()=>dispatch(removeFromFav(data.items.id))}  variant="primary">Remove from Favorites</Button>
        </div>
