@@ -10,6 +10,8 @@ https://addis-project.web.app/
 
 ![Web capture_29-1-2024_214923_localhost](https://github.com/naol06/Addis-software-test_project/assets/118481867/6d64eba1-8d92-4899-b9ec-05d562d7ff59)
 
+For Incorrect Directory
+
 ![Web capture_29-1-2024_21542_localhost](https://github.com/naol06/Addis-software-test_project/assets/118481867/082544ae-9c34-4dda-9054-64c2e3168ad2)
 
 Favority page
