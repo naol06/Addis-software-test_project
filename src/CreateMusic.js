@@ -12,7 +12,7 @@ function CreateMusic() {
   });
   const handlForm=(e)=>{
     e.preventDefault();
-    axios.post("http://localhost:3001/items",data)
+    axios.post("https://addis-project.onrender.com/items",data)
     .then(res=>{
 navigate('/')
     })
@@ -30,7 +30,7 @@ navigate('/')
     <div className="form-group my-2">
     <input type="text" className="form-control " onChange={e=>setdata({...data, singer:e.target.value})} placeholder="Enter Singer Name" required/>
   </div>
-    <div className="form-group">
+    <div className="form-group mb-2">
       <input type="text" className="form-control" onChange={e=>setdata({...data, song:e.target.value})} placeholder="Enter Song Title" required/>
     </div>
     <div className="form-group">

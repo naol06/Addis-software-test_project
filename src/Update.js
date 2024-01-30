@@ -15,7 +15,7 @@ function Update() {
     });
     const handleUpdate = (e) => {
       e.preventDefault()
-      axios.put('http://localhost:3001/items/' + id, data)
+      axios.put('https://addis-project.onrender.com/items/' + id, data)
           .then(res => {
              navigate("/")
           })
@@ -31,7 +31,7 @@ function Update() {
         <div className="form-group my-2">
         <input type="text" value={data.singer}onChange={e=>setdata({...data,singer:e.target.value})} className="form-control " placeholder="Enter Singer Name" required/>
       </div>
-        <div className="form-group">
+        <div className="form-group mb-2">
           <input type="text" value={data.song} onChange={e=>setdata({...data,song:e.target.value})} className="form-control" placeholder="Enter Song Title" required/>
         </div>
         <div className="form-group">

@@ -9,7 +9,7 @@ function SongList({id,song,singer,songDescription,rating }) {
     const handleDelete=(id,singer)=>{
       const conf=window.confirm(`Do you Want to Delete ${singer}'s Song `)
       if(conf){
-        axios.delete("http://localhost:3001/items/"+id)
+        axios.delete("https://addis-project.onrender.com/items/"+id)
         .then(res=>{
 alert("you have successfully deleted the song")
 window.location.reload()

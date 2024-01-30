@@ -4,7 +4,7 @@ import axios from 'axios'
 function Home() {
   const [data, setdata] = useState([]);
   useEffect(() => {
-  axios.get('http://localhost:3001/items')
+  axios.get('https://addis-project.onrender.com/items')
  .then(res=>{
  setdata(res.data)
  })
