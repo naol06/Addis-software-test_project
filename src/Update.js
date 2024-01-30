@@ -25,7 +25,7 @@ function Update() {
     return (
         <div className='d-flex align-items-center justify-content-center vh-100'>
        
-        <div className='w-50 border p-5 bg-secondary rounded '>
+        <div className='w-75 border p-md-5 p-1 bg-secondary rounded '>
         <div className='d-flex align-items-center justify-content-center v' ><h1>Update Song</h1></div>
         <form onSubmit={handleUpdate}>
         <div className="form-group my-2">
@@ -35,7 +35,7 @@ function Update() {
           <input type="text" value={data.song} onChange={e=>setdata({...data,song:e.target.value})} className="form-control" placeholder="Enter Song Title" required/>
         </div>
         <div className="form-group">
-        <input type="number" value={data.rating}onChange={e=>setdata({...data,rating:e.target.value})} className="form-control" placeholder="Enter Song Rating" required/>
+        <input type="number" value={data.rating}onChange={e=>setdata({...data,rating:e.target.value})} min="1" max="5" className="form-control" placeholder="Enter Song Rating" required/>
       </div>
       <div className="form-group my-2">
       <textarea  className="form-control "value={data.songDescription} onChange={e=>setdata({...data,songDescription:e.target.value})} placeholder="Enter Song Description" required/>

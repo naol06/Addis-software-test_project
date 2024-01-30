@@ -10,10 +10,10 @@ function ReadSong() {
     console.log(data);
     return (
         <div className='d-flex justify-content-center align-items-center  vh-100'>
-       {data? <div  className='border p-4 w-50 ' >
+       {data? <div  className='border p-4 w-75 ' >
         <div className='d-flex flex-column justify-content-center align-items-center'>
         <div className='d-flex justify-content-center'>
-      <strong >{data.singer}</strong> :  <div className='mx-2 product_rating'>
+      <strong >{data.singer}</strong> :  <div className='mx-2 Song_rating'>
       {Array(Number(data.rating)).fill().map(()=>{
        return <p className="bi painte painte bi-star-fill"></p>
     })}

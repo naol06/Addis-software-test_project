@@ -24,7 +24,7 @@ navigate('/')
   return (
     <div className='d-flex align-items-center justify-content-center vh-100'>
    
-    <div className='w-50 border p-5 bg-secondary rounded '>
+    <div className='w-75  border p-md-5 p-1 bg-secondary rounded '>
     <div className='d-flex align-items-center justify-content-center v' ><h1>Create Song</h1></div>
     <form onSubmit={handlForm}>
     <div className="form-group my-2">
