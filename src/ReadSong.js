@@ -10,7 +10,7 @@ function ReadSong() {
     const [datafav, setdatafav] = useState(true);
     const pro=useSelector(state=>state.favData);
    
-    const favid=data.id
+    const favid=data.id;
     useEffect(() => {
       for (let i = 0; i < pro.length; i++) {
         if(pro[i].items.id===favid){
