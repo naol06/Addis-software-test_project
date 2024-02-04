@@ -18,7 +18,16 @@ Favority page
 
 ![Web capture_29-1-2024_215421_localhost](https://github.com/naol06/Addis-software-test_project/assets/118481867/8972a25c-5d7b-42ea-a44f-427875bf08bc)
 
+Responsive for all devise 
+<br/>
+For Tab view
 
+![Tab](https://github.com/naol06/Addis-software-test_project/assets/118481867/37c0fd14-0332-4dda-b9e4-580e1ac76822)
+<br/>
+For mobile view
+<br/>
+
+![mobile](https://github.com/naol06/Addis-software-test_project/assets/118481867/34fa44a3-9349-4d7d-b9f4-f85611b3fd9f)
 
 
 # Getting Started with Create React App
