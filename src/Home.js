@@ -9,8 +9,7 @@ function Home() {
  setdata(res.data)
  })
   }, []);
-  return (
-    <div className='row' >
+  return (<div>{data.length>0 ? <div className='row' >
  {data .map((list,i)=>{
  return < >
   <SongList
@@ -22,6 +21,13 @@ function Home() {
   />
   </>
  })}
+    </div> : <div className='d-flex justify-content-center align-items-center vh-100' >
+    <div className="d-flex justify-content-center">
+    <div className="spinner-border" role="status">
+      <span className="sr-only"></span>
+    </div>
+  </div>
+  </div>}
     </div>
   )
 }
